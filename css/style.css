@@ -1,10 +1,82 @@
+body {
+    background-color: black;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img {
+width: 55px;
+height: 50px;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: rgb(248, 216, 174);
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after {
+     content:'';
+     width:0%;
+     height: 2px;
+     background: rgb(216, 162, 92);
+     display: block;
+     margin: auto;
+     transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+     width: 100%;
+}
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 10;
+    width: 100%;
+    background-color: rgb(122, 55, 15);
+    color: white;
+    text-align: center;
+    margin-bottom: auto;
+  }
+
+.footer h4 {
+    margin-bottom: 5px;
+    margin-top: auto;
+    font-weight: 600;
+}
+.footer a {
+    color: rgb(236, 203, 95);
+}
+.footer h5 {
+    color: blanchedalmond;
+}
+.icons .fa {
+    color: #ffbf47;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
+span {
+    color: #fcba03;
+}
 p {
-    color: black;
+    color: blanchedalmond;
     font-size: 1.4rem;
     margin-top: 5px;
     line-height: 2.5rem;
@@ -35,4 +107,28 @@ p {
     margin: 20px;
     overflow: hidden;
     border-radius: 10px;
+}
+#projects .project-info {
+    padding: 30px;
+    flex-basis: 50%;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+}
+#projects .project-info h2 {
+    color: blanchedalmond;
+    margin-top: 30px;
+}
+#projects .project-info h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: blanchedalmond;
+    margin-top: 50px;
+}
+#projects .project-header {
+    text-align: center;
 }
